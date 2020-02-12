@@ -1,0 +1,243 @@
+body{
+	font-family:sans-serif;
+}
+.dws-form{
+	background-color:rgba(255,255,255,0.2);
+	padding:10px;
+	width:330px;
+}
+
+.dws-form a{
+	transition:0.4s;
+	text-decoration:none;
+	color:#258cad;
+}
+.dws-form a:hover{
+	color:#35d2ff;
+	transition:0.4s;
+}
+#forgetPass{
+	display:block;
+	text-align:center;
+}
+
+.dws-form input{
+	display:block;
+	margin:0 0 40px 0;
+	font-size:20px;
+	width:100%;
+	border:1px solid #acacac;
+	border-radius:3px;
+	box-sizing:border-box;
+	padding:8px;
+	color:#00045f;
+}
+.del{
+	display:none;
+}
+.tab-form{
+	background-color:#fff;
+	padding:30px;
+	padding-top:40px;
+}
+label.tab{	
+	color:#fff;
+	padding:15px;
+	display:inline-block;
+	border-radius:3px 3px 0 0;
+	cursor:pointer;
+}
+
+
+#enter:hover, #reg:hover{
+	transition:0.4s;
+	background-color:#258cad;
+}
+input[name="rad"]:checked + label{
+	background-color:white;
+	color:#1d5f75;
+}
+input[name="rad"]{
+	display:none;
+}
+#tab-1:checked~#form-1, #tab-2:checked~#form-2{
+	display:block;
+}
+.input{
+	border:1px solid white;
+}
+
+/*плавающий текст в полях ввода вместо плейсхолдера*/
+.box-input{
+	position:relative;
+}
+.box-input label{
+	font-size:20px;
+	position:absolute;
+	top:0;
+	left:0;
+	padding-top:10px;
+	padding-left:8px;
+	transition:0.4s;
+	color:#909090;
+	pointer-events:none;
+}
+.box-input input:focus ~label, 
+.box-input input:valid ~label{
+	top:-37px;
+	transition:0.4s;
+	font-size:16px;
+	color:#1d5f75;
+}
+/*эфект нопки*/
+#enter, #reg{
+	border-radius:3px;
+	margin:0 auto 10px auto;
+	display:block;
+	width:100%;
+	padding:8px 0 8px 0;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	background-color:#0049c7;
+	transition:0.4s;
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	border-bottom:4px solid #2599c6;
+}
+.button::before, .button::after{
+	content:"";
+	display:block;
+	background-color:#2599c6;
+	width:100%;
+	height:100%;
+	position:absolute;
+	transition:0.6s;
+	z-index:-1;
+}
+.button::before{
+	top:0;
+	left:-100%;
+}
+.button::after{
+	background-color:#1d5f86;
+	top:100%;
+}
+.button:hover::before{
+	left:0;
+	transition:0.3s;
+} 
+.button:hover::after{
+	top:0;
+}
+/* анимированный чекбокс*/
+
+.recover input{
+	margin:0;
+	display:none;
+}
+label[for="chb"]{
+	padding-left:40px;
+	width:230px;
+	display:block;
+	position:relative;
+}
+label[for="chb"]::before{
+	content:"";
+	border:2px solid #2599c6;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:5px;
+	left:0;
+	border-radius:3px;
+	transition:0.2s;
+}
+#chb:checked + label::before{
+	border-top:white;
+	border-left:white;
+	border-bottom:2px solid blue;
+	border-right:2px solid blue;
+	width:15px;
+	height:22px;
+	transform:rotate(40deg);
+	top:-3px;
+	transition:0.2s;
+}
+/*анимированный чекбокс*/
+
+/* анимация иконок соц-сетей*/
+.dws-form ul{
+	list-style:none;
+	padding:0;
+	margin:10px 0 10px 0;
+	text-align:center;
+}
+.dws-form li {
+	display:inline-block;
+	margin:0 5px 0 5px;
+}
+.social li a{
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+}
+.social a::before, .social a::after{
+		content:"";
+		background-color:#2599c6;
+		position:absolute;
+		width:100%;
+		height:1px;
+		left:0;
+		transition:0.5s;
+		transform:scaleX(1);
+}
+.social div::before, .social div::after{
+		content:"";
+		background-color:#2599c6;
+		position:absolute;
+		width:1px;
+		height:100%;
+		transition:0.5s;
+		transform:scaleY(0);
+}
+
+.social a::before{
+	transform:scaleX(0);
+	transform-origin:right;
+}
+.social a::after{
+	transform:scaleX(0);
+	transform-origin:left;
+}
+.social a:hover::before{
+	transform:scaleX(1);
+	transform-origin:left;
+}
+.social a:hover::after{
+	transform:scaleX(1);
+	transform-origin:right;
+}
+
+.social div::before{
+	left:0;
+	transform:scaleY(0);
+	transform-origin:top;
+}
+.social div::after{
+	right:0;
+	transform:scaleY(0);
+	transform-origin:bottom;
+}
+.social div:hover::before{
+	transform:scaleY(1);
+	transform-origin:top;
+}
+.social div:hover::after{
+	transform:scaleY(1);
+	transform-origin:bottom;
+}
+/* анимация иконок соц-сетей*/

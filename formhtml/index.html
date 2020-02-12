@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<title>Форма авторизации</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="/base.css">
+</head>
+<body>
+	<div class='dws-wrapper'>
+		<div class="dws-form">
+		
+		<input id="tab-1" name="rad" checked type="radio"/>
+		<label for="tab-1" class="tab">Авторизация</label>
+		
+		<input id ="tab-2" name="rad" type="radio">
+		<label for="tab-2" class="tab">Регистрация</label>
+		
+		<form class="tab-form del" id="form-1">	
+			<div class="box-input">
+				<input class="input" required />
+				<label>Введите E-mail</label>
+			</div>
+			<div class="box-input">
+				<input class="input" type="password" required />
+				<label>Введите пароль</label>
+			</div>
+			
+			<a class="button" href="" id="enter">ВОЙТИ</a>
+			<ul class="social">
+				<li><a href=""><div>FB</div></a></li>
+				<li><a href=""><div>IN</div></a></li>
+				<li><a href=""><div>YT</div></a></li>
+				<li><a href=""><div>TW</div></a></li>
+			</ul>
+			<a href="" id="forgetPass">Я забыл свой пароль</a>
+		</form>
+		
+		<form class="tab-form del" id="form-2">	
+			<div class="box-input">
+				<input class="input" required />
+				<label>Введите логин</label>
+			</div>
+			<div class="box-input">
+				<input class="input" required />
+				<label>Введите E-mail</label>
+			</div>
+			<div class="box-input">
+				<input class="input" type="password" required />
+				<label>Введите пароль</label>
+			</div>
+			<a class="button" href="" id="reg">РЕГИСТРАЦИЯ</a>
+			<div class="recover">
+				<input id="chb" type="checkbox">
+				<label for="chb">Я ознакомлен(-а) и принимаю <a href="">условия регистрации</a></label>
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>

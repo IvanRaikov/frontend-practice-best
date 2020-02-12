@@ -1,0 +1,178 @@
+body{
+    margin:0;
+    font-family:Releway, Arial;
+    background-color:#fff;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#3c3939;
+}
+p{
+    font-size:14px;
+    color:#645e5e;
+}
+hr{
+    color:#92919842;
+}
+h2{
+    color:#5c5b5e;
+}
+a{
+    color:#5c5b5e;
+}
+.container{
+    max-width:960px;
+    width:80%;
+    margin: 0 auto;
+    background-color:#edebf442;
+    padding:0 30px;
+}
+/*header*/
+header{
+    min-height:120px;
+}
+header .brand{
+    margin-top:30px;
+    display:inline-block;
+    float:left;
+}
+header .brand a{
+    color:#203e5a;
+    font-size:25px;
+}
+ul.nav{
+    list-style: none;
+    float:right;
+    margin-top:40px;
+}
+ul.nav li{
+    display:inline-block;
+    font-size:18px;
+    margin-right:20px;
+}
+ul.nav li a{
+    color:#5c6478;
+}
+/*jumbotron*/
+.jumbotron{
+    width:100%;
+    background-image:url(/zemlyanika/images/jumbotron.jpg);
+    height:250px;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    box-sizing:border-box;
+}
+#jumb-button{
+    display:inline-block;
+    font-size:18px;
+    height:25px;
+    background-color:#ff0535de;
+    padding:20px 30px;
+    border-radius:37px;
+    box-shadow: 5px 5px 5px #161524c7;
+    color:#fff;
+    cursor:pointer;
+    transition:.2s;
+}
+#jumb-button i{
+	font-size:20px;
+}
+@keyframes speen{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+#jumb-button:hover{
+    background-color:#ca0836b5;
+}
+#jumb-button:hover i{
+    animation-name:speen;
+	animation-duration:1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+
+/*services*/
+.service{
+    width:33%;
+    text-align: center;
+    box-sizing:border-box;
+    padding:10px;
+    margin-top:30px;
+    margin-bottom:20px;
+    display:inline-block;
+    float:left;
+}
+.service i{
+    font-size:30px;
+    color:#645e5e;
+}
+.service a:hover i{
+    color:#3c3939;
+}
+/* articles */
+article{
+    width:80%;
+    min-height:170px;
+    margin:50px auto 0 auto;
+}
+article img{
+    width:30%;
+    float:left;
+    background-size: cover;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+/* footer */
+footer{
+    width:100%;
+    background-color:#0a1324;
+    padding:20px;
+}
+footer div{
+    margin:0 auto 0 auto;
+    width:50%;
+    text-align: center;
+}
+footer li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+@media (max-width:575px){
+    ul.nav{
+        float:none;
+        margin:0;
+        width:100%;
+    }
+    header.container{
+        padding-bottom:10px;
+    }
+    header .brand{
+        float:none;
+    }
+    ul.nav li{
+        display:block;
+        margin:0;
+    }
+    article{
+        width:100%;
+    }
+    article img{
+        float:none;
+        width:100%;
+    }
+    .service{
+        width:100%;
+    }
+    footer div{
+        width:100%;
+    }
+}

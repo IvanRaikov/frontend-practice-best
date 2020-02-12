@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Форма авторизации</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="/base.css">
+	<script src="/Jquery.js"></script>
+</head>
+<body>
+	<div class='dws-wrapper'>
+		<div class="dws-form">
+		<label class="tab active">Авторизация</label>
+		<label class="tab">Регистрация</label>
+		<form class="tab-form">	
+			<input class="input" type="email" placeholder="введите E-mail"/>
+			<input class="input" type="password" placeholder="введите пароль"/>
+			<a href="" id="enter">ВОЙТИ</a>
+			<ul>
+				<li><a href="">FB</a></li>
+				<li><a href="">IN</a></li>
+				<li><a href="">YT</a></li>
+				<li><a href="">TW</a></li>
+			</ul>
+			<a href="" id="forgetPass">Я забыл свой пароль</a>
+		</form>
+		<form class="tab-form del">	
+			<input class="input" type="email" placeholder="введите email"/>
+			<input class="input" type="text" placeholder="введите свой логин"/>
+			<input class="input" type="password" placeholder="введите пароль"/>
+			<a href="" id="reg">РЕГИСТРАЦИЯ</a>
+			<div class="recover">
+				<input type="checkbox">
+				<label id="agree">Я ознакомлен(-а) и принимаю <a href="">условия регистрации</a></label>
+			</div>
+		</form>
+		</div>
+	</div>
+	<script src="js.js"></script>
+</body>
+</html>
